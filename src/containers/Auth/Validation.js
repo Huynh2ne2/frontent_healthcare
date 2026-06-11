@@ -28,9 +28,14 @@ class Validation extends Component {
         if (!email_pattern.test(values.email)) {
             errors.email = "Email not format. Ex: email_name@gmail.com"
         }
-        if (!password_pattern.test(values.password)) {
-            errors.password = "Password must be at least 8 chracters long"
-        }
+        // if (!password_pattern.test(values.password)) {
+        //     errors.password = "Password must be at least 8 chracters long"
+        // }
+        if (values.password !== undefined && values.password !== null) {
+    if (!password_pattern.test(values.password)) {
+        errors.password = "Password must be at least 8 characters long";
+    }
+}
 
         if (!phonenumber_pattern.test(values.phoneNumber)) {
             errors.phoneNumber = "Please enter valid 10 digit phone number"
