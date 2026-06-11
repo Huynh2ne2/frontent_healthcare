@@ -168,7 +168,7 @@ class BookingModal extends Component {
         const errors = validation.render(this.state.values);
         console.log('Huynh check errors: ', Object.keys(errors).length)
         console.log('Huynh check errors: ', errors)
-        if (isValid && Object.keys(errors).length === 1) {
+        if (isValid && Object.keys(errors).length === 0) {
             this.setState({ isShownLoading: true });
 
             try {
