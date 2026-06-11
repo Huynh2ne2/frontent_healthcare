@@ -16,8 +16,6 @@ import LoadingOverlay from 'react-loading-overlay';
 import Validation from '../../../Auth/Validation';
 
 
-
-
 class BookingModal extends Component {
     constructor(props) {
         super(props);
@@ -67,6 +65,16 @@ class BookingModal extends Component {
                 break;
             }
         }
+        if (!this.state.birthday || isNaN(new Date(this.state.birthday))) {
+            toast.error("Invalid birthday");
+            return;
+        }
+        if (!this.state.birthday) {
+            isValid = false;
+            toast.info("Missing birthday");
+        }
+        console.log("birthday raw:", this.state.birthday);
+        console.log("birthday type:", typeof this.state.birthday);
         return isValid
     }
 
@@ -115,16 +123,20 @@ class BookingModal extends Component {
         });
     }
 
+    // handleOnchangeDatePicker = (date) => {
+    //     this.setState({
+    //         birthday: date[0]
+    //     })
+    // }
+
     handleOnchangeDatePicker = (date) => {
         this.setState({
-            birthday: date[0]
-        })
+            birthday: date
+        });
     }
     handleChangeSelect = async (selectedOption) => {
         this.setState({ selectedGender: selectedOption });
     }
-
-
 
 
 
@@ -159,7 +171,11 @@ class BookingModal extends Component {
     }
 
     handleConfirmBooking = async () => {
-        let date = new Date(this.state.birthday).getTime();
+        // let date = new Date(this.state.birthday).getTime();
+        
+        let date = this.state.birthday
+            ? new Date(this.state.birthday).getTime()
+            : null;
         let timeString = this.buildTimeBooking(this.props.dataTime);
         let doctorName = this.buildDoctorName(this.props.dataTime);
         let isValid = this.checkValidateInput();
