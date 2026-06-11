@@ -129,11 +129,11 @@ class BookingModal extends Component {
     //     })
     // }
 
-   handleOnchangeDatePicker = (date) => {
-    this.setState({
-        birthday: date
-    });
-}
+    handleOnchangeDatePicker = (date) => {
+        this.setState({
+            birthday: date
+        });
+    }
     handleChangeSelect = async (selectedOption) => {
         this.setState({ selectedGender: selectedOption });
     }
@@ -172,10 +172,18 @@ class BookingModal extends Component {
 
     handleConfirmBooking = async () => {
         // let date = new Date(this.state.birthday).getTime();
-        
-        let date = this.state.birthday
-            ? new Date(this.state.birthday).getTime()
-            : null;
+
+        // let date = this.state.birthday
+        //     ? new Date(this.state.birthday).getTime()
+        //     : null;
+
+        let raw = this.state.birthday;
+
+        let date = raw instanceof Date
+            ? raw.getTime()
+            : Array.isArray(raw)
+                ? raw[0].getTime()
+                : null;
         let timeString = this.buildTimeBooking(this.props.dataTime);
         let doctorName = this.buildDoctorName(this.props.dataTime);
         let isValid = this.checkValidateInput();
