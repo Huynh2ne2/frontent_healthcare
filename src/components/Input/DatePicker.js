@@ -27,7 +27,8 @@ class DatePicker extends Component {
 
             // Take the blur event and process the string value
             const valueMoment = moment(value, 'DD/MM/YYYY');
-            onChange([valueMoment.toDate(), valueMoment.toDate()]);
+            // onChange([valueMoment.toDate(), valueMoment.toDate()]);
+            onChange([valueMoment.toDate()]);
         }
     }
 
@@ -112,6 +113,7 @@ class DatePicker extends Component {
             dateFormat: this.DISPLAY_FORMAT,
             allowInput: true,
             disableMobile: true,
+            mode: "single",
             onClose: onClose,
             onOpen: this.onOpen
         };

@@ -129,11 +129,11 @@ class BookingModal extends Component {
     //     })
     // }
 
-    handleOnchangeDatePicker = (date) => {
-        this.setState({
-            birthday: date
-        });
-    }
+   handleOnchangeDatePicker = (date) => {
+    this.setState({
+        birthday: date
+    });
+}
     handleChangeSelect = async (selectedOption) => {
         this.setState({ selectedGender: selectedOption });
     }
