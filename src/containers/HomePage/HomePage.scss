@@ -1,0 +1,281 @@
+.slick-prev {
+    border: 2px solid #d7d7d7 !important;
+    left: -20px !important;
+    z-index: 1000 !important;
+    background: #fff !important;
+    height: 48px !important;
+    width: 44px !important;
+
+    &:hover {
+        background: #eceaea !important;
+        cursor: pointer;
+    }
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-family: FontAwesome !important;
+    color: red !important;
+}
+
+.slick-next {
+    border: 2px solid #d7d7d7 !important;
+    right: -10px !important;
+    background: #fff !important;
+    height: 48px !important;
+    width: 44px !important;
+
+    &:hover {
+        background: #eceaea !important;
+        cursor: pointer;
+    }
+}
+
+.slick-disabled {
+    display: none !important; 
+}
+
+.section-share {
+    &.section-specialty {
+        background: #f5f5f5;
+    }
+
+    &.section-outstanding-doctor {
+        background: #f5f5f5;
+    }
+
+    &.section-About {
+        height: 500px !important;
+    }
+
+    .section-body {
+
+
+        .section-customize {
+            padding: 5px;
+            cursor: pointer;
+
+            .bg-image {
+
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                border: 1px solid #eee;
+                border-radius: 10px;
+                width: 310px;
+                height: 150px;
+
+                // &.section-specialty {
+                  
+
+                // }
+
+                &.section-medical-facility {
+                    background-image: url('../../assets/images/img_medical-facility/he-thong-y-te-thu-cuc.jpg');
+                }
+
+                &.section-outstanding-doctor {
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 50%;
+                    background-size: cover;
+                }
+
+                &.section-HandBook {
+                    background-image: url('../../assets/images/img_handbook/bookingcare-cover-2.jpg');
+                    background-size: cover;
+                  
+                }
+            }
+        }
+    }
+}
+
+.section-share {
+    height: 330px;
+
+
+    .section-container {
+        margin: 0 100px;
+        display: flex;
+        flex-direction: column;
+
+        .section-header {
+            height: 60px;
+            margin-bottom: 30px;
+            padding-top: 30px;
+
+            .title-section {
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 22px;
+                font-weight: 600;
+            }
+
+            .btn-section {
+                float: right;
+                padding: 10px 15px;
+                border: none;
+                outline: none;
+                display: block;
+                background: #ebebeb;
+                color: black;
+                cursor: pointer;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: white;
+                    background: #f7d800;
+                }
+            }
+        }
+
+
+    }
+}
+
+
+.section-outstanding-doctor {
+    .outer-bg {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .section-customize {
+        padding: 5px;
+        font-size: large;
+        font-weight: bold;
+
+        .customize-border {
+            border: 1px solid #e4dbdb;
+            padding: 20px;
+            height: 223.6px;
+        }
+
+    }
+
+}
+
+.home-footer {
+    text-align: center;
+    padding-top: 8px;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.section-About {
+    padding: 0 100px;
+
+    .section-about-header {
+        padding: 20px 10px;
+        font-size: 22px;
+        font-weight: 600;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .section-about-content {
+        display: flex;
+        gap: 15px;
+
+        .content-left {
+            width: 55%;
+        }
+
+        .content-right {
+            width: 45%;
+        }
+    }
+}
+
+
+.footer {
+    display: flex;
+    width: 100%;
+    grid-gap: 20px;
+    gap: 20px;
+    height: 300px;
+    text-align: justify;
+    justify-content: center;
+    padding: 12px;
+    margin: 46px 0px;
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        width: 33.33%;
+
+        h2 {
+            font-size: 20px;
+            line-height: 17px;
+            padding: 10px 0;
+            color: black;
+            font-weight: 700;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+
+            li {
+                color: black;
+                font-size: 15px;
+                padding: 5px 0px;
+
+                &:hover {
+                    cursor: pointer;
+                    color: deeppink;
+                    font-weight: bold;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: black;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: deeppink;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+h1 {
+    margin: 10px 0;
+    text-align: center;
+    font-family: cursive;
+
+}
+
+.introduce-page {
+    margin: 20px 100px;
+    background-color: #FCFAF6;
+    justify-content: center;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2;
+    padding: 10px;
+
+    p {
+        margin-bottom: 10px;
+    }
+}
+
+.policy-page {
+    margin: 20px 100px;
+    background-color: #FCFAF6;
+    justify-content: center;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2;
+    padding: 10px;
+
+    p {
+        margin-bottom: 10px;
+    }
+}

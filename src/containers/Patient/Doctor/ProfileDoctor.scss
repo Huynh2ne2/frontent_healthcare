@@ -1,0 +1,36 @@
+.profile-doctor-container {
+
+    .intro-doctor {
+        display: flex;
+        gap    : 15px;
+
+        .content-left {
+            width              : 80px;
+            height             : 80px;
+            border-radius      : 50%;
+            background-size    : cover;
+            background-repeat  : no-repeat;
+            background-position: center;
+
+        }
+
+        .content-right {
+            width         : calc(100% - 95px);
+            display       : flex;
+            flex-direction: column;
+            padding-left  : 10px;
+
+            .up {
+                font-family: 'Times New Roman', Times, serif;
+                font-size  : 20px;
+                font-weight: bold;
+            }
+
+            .down {
+                padding   : 10px;
+                text-align: justify;
+            }
+
+        }
+    }
+}

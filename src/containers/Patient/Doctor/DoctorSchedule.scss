@@ -1,0 +1,83 @@
+.doctor-schedule-container {
+    border-right: 1px solid #ddd;
+    height      : 100%;
+
+    .all-schedule {
+        select {
+            border-bottom: 1px solid #ddd;
+            border-top   : 1px solid white;
+            border-left  : 1px solid white;
+            border-right : 1px solid white;
+            outline      : none;
+            cursor       : pointer;
+            color        : #337ab7;
+            padding      : 10px 0;
+            font-weight  : 600;
+
+            option {
+                cursor: pointer;
+            }
+
+        }
+    }
+
+    .all-available-time {
+        .text-calendar {
+            color : #333;
+            margin: 10px 0;
+
+            span {
+                text-transform: uppercase;
+                margin-left   : 5px;
+            }
+
+
+        }
+
+        .time-content {
+
+
+            .time-content-btns {
+                display  : flex;
+                gap      : 15px;
+                flex-wrap: wrap;
+
+
+                button {
+                    padding-top     : 8px 10px;
+                    border          : none;
+                    outline         : none;
+                    background-color: gray;
+
+                    border-radius   : 3px;
+                    background-color: #fff04f;
+                    font-weight     : 600;
+                    color           : #333;
+                    padding         : 10px 0;
+
+                    &:hover {
+                        background-color: #45c3d2;
+                        color           : white;
+                    }
+                }
+
+                .btn-vi {
+                    min-width: 120px;
+                }
+
+                .btn-en {
+                    min-width: 170px;
+                }
+
+                .no-schedule {
+                    font-style: italic;
+                    font-size : 13px;
+                }
+            }
+
+            .book-free {
+                margin-top: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+.doctor-detail-container {
+    height: 500px;
+
+
+    .intro-doctor {
+        display: flex;
+        gap    : 15px;
+        margin : 10px 20px;
+
+        .content-left {
+            width              : 20%;
+            width              : 120px;
+            height             : 120px;
+            border-radius      : 50%;
+            background-size    : cover;
+            background-repeat  : no-repeat;
+            background-position: center;
+            margin             : 10px 20px;
+
+        }
+
+        .content-right {
+            width         : 80%;
+            display       : flex;
+            flex-direction: column;
+            padding-left  : 10px;
+
+            .up {
+                font-family: 'Times New Roman', Times, serif;
+                font-size  : 20px;
+                font-weight: bold;
+            }
+
+            .down {
+                padding-top: 10px;
+
+                .like-share-plugin {
+                    margin: 10px 0 20px 0;
+                }
+            }
+
+        }
+    }
+
+    .detail-info {
+        border-top      : 1px solid #ddd;
+        background-color: #f9f9f9;
+        padding         : 10px 100px;
+        border-bottom   : 1px solid #ddd;
+
+        h1,
+        h2,
+        h3 {
+            font-size: 17px;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .schedule-doctor {
+        margin    : 0 100px;
+        display   : flex;
+        gap       : 25px;
+        padding   : 10px 0;
+        min-height: 200px;
+
+        .content-left {
+            width: 50%;
+        }
+
+        .content-right {
+            width: 50%;
+        }
+    }
+
+    .comment-doctor {
+        padding: 10px 100px;
+    }
+}

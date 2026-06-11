@@ -1,0 +1,37 @@
+.manage-schedule-container {
+    .m-s-title {
+        text-transform: uppercase;
+        text-align    : center;
+        margin-top    : 15px;
+        font-weight   : bold;
+        font-size     : 18px;
+        margin-bottom : 15px;
+    }
+
+    .container {
+        .pick-hour-container {
+            display    : flex;
+            padding-top: 20px;
+            gap        : 20px;
+            flex-wrap  : wrap !important; //khi responsive (co giãn màn hình) thì nó không bị bể cái background
+
+            button {
+                padding: 5px 15px;
+                border : 1px solid gray;
+
+                &.active {
+                    background-color: orange;
+                }
+            }
+
+        }
+    }
+
+    .btn-save-schedule {
+        margin-top: 20px;
+
+
+    }
+
+
+}
