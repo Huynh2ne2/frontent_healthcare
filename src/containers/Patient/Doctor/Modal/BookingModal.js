@@ -203,6 +203,9 @@ class BookingModal extends Component {
                     this.props.closeBookingModal();
                 }
                 else if (res && res.errCode === 2) {
+                    toast.warning("Your appointment has already been booked!");
+                }
+                else if (res && res.errCode === 3) {
                     toast.warning("This time slot has already been booked!");
                 }
                 else {
