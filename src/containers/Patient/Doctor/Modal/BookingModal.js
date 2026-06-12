@@ -166,7 +166,7 @@ class BookingModal extends Component {
     }
 
     handleConfirmBooking = async () => {
-         let date = new Date(this.state.birthday).getTime();
+        let date = new Date(this.state.birthday).getTime();
 
         let timeString = this.buildTimeBooking(this.props.dataTime);
         let doctorName = this.buildDoctorName(this.props.dataTime);
@@ -199,10 +199,14 @@ class BookingModal extends Component {
 
                 if (res && res.errCode === 0) {
                     this.setState({ isShownLoading: false });
-                    toast.success("Booking a new appointment succeed!");
+                    toast.success("Appointment successfully created. Please verify via email");
                     this.props.closeBookingModal();
-                } else {
-                    toast.error("Booking a new appointment error!");
+                }
+                else if (res && res.errCode === 2) {
+                    toast.warning("This time slot has already been booked!");
+                }
+                else {
+                    toast.error(res.errMessage || "Booking error!");
                 }
             } catch (error) {
                 this.setState({ isShownLoading: false });
