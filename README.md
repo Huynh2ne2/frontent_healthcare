@@ -1,68 +1,110 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# HealthCare Management System
 
-## Available Scripts
+A full-stack healthcare appointment booking platform inspired by BookingCare, developed independently using ReactJS, NodeJS, and PostgreSQL.
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+The system allows patients to search for doctors, specialties, and clinics, book appointments, receive email confirmations, and manage healthcare information efficiently.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The platform also supports role-based access control for administrators, doctors, and patients.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Features
 
-### `npm test`
+### Patient
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Register and login
+* Search doctors, specialties, and clinics
+* Book appointments
+* Confirm appointments via email
+* View booking information
 
-### `npm run build`
+### Doctor
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Manage personal schedules
+* View confirmed appointments
+* Send examination results via email
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+### Admin
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Manage users
+* Manage doctors
+* Manage specialties
+* Manage clinics
+* Manage schedules
+* Manage appointments
 
-### `npm run eject`
+### Additional Features
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* Appointment conflict validation
+* Email confirmation workflow
+* Email-based medical result delivery
+* Vietnamese / English language support
+* Responsive user interface
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Technologies
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Frontend
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+* ReactJS
+* Redux
+* SCSS
+* Bootstrap
 
-## Learn More
+### Backend
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* NodeJS
+* ExpressJS
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Database
 
-### Code Splitting
+* MySQL (Development)
+* PostgreSQL (Production)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### Tools
 
-### Analyzing the Bundle Size
+* Git
+* Postman
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## Architecture
 
-### Making a Progressive Web App
+Frontend (ReactJS)
+↓
+REST API
+↓
+Backend (ExpressJS)
+↓
+MySQL / PostgreSQL
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## Screenshots
 
-### Advanced Configuration
+(Add project screenshots here)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## Demo
 
-### Deployment
+Demo Video:
+[your youtube link]
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+## Installation
 
-### `npm run build` fails to minify
+Frontend
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+```bash
+npm install
+npm run dev
+```
+
+Backend
+
+```bash
+npm install
+npm start
+```
+
+## Learning Outcomes
+
+* Built a complete full-stack application independently.
+* Implemented role-based authorization and authentication.
+* Developed appointment scheduling and validation logic.
+* Integrated email notifications and confirmation workflows.
+* Applied Redux for state management.
+* Worked with RESTful APIs and database deployment.
