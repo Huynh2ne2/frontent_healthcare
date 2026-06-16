@@ -82,7 +82,7 @@ MySQL / PostgreSQL
 ## Demo
 
 Demo Video:
-[your youtube link]
+[[your youtube link]](https://youtu.be/9g3K_l_drMQ)
 
 ## Installation
 
